@@ -1,0 +1,207 @@
+
+/*--------------------------- @media(max-width: 1600px)applique ces règles pour un écran =< 1600px*/
+
+@media(max-width: 1600px){   
+     
+    /* -------page main-------------------- */
+    #addBouton{
+        width: 20%;
+        margin-bottom: 5%;  
+    }
+
+    .p-card{
+        font-size: 20px;
+        min-height: 45;
+    }
+
+    .p-cardWorkStation{
+      font-size: 20px;
+    }
+}
+
+
+/*--------------------------- @media(max-width: 1430px)---------------------------- */
+
+@media(max-width: 1430px){
+
+    /* -------page main-------------------- */
+    .p-card{
+        font-size: 19px;
+    }
+
+    .p-cardWorkStation{
+      font-size: 19px;
+    }
+}
+
+
+/*--------------------------- @media(max-width: 1280px)---------------------------- */
+
+@media(max-width: 1280px){
+
+    /* -------page main-------------------- */
+    #addBouton{
+        width: 22%;
+    }
+
+    .cardWorker{
+       width: 30%;
+    }
+}
+
+
+/*------------------@media(max-width: 1024px)I pad mini (à l'horizontal)--------------*/
+
+@media(max-width: 1024px){ 
+
+   /*----------page Main:*/
+   #addBouton{
+      width: 28%;
+   }
+
+  .cardWorker{
+      height: 550px;
+   }
+
+  .p-card{
+     min-height:50px ;
+     font-size: 18px;
+   }
+
+  .p-cardWorkStation{
+     min-height: 70px;
+     font-size: 18px;
+   }
+} 
+
+
+/*-----------@media(max-width: 834px)I pad pro et galaxy tab S7  (à la verticale)----------------------*/
+
+@media(max-width: 834px){
+
+ /*----------page Main:*/
+   main{
+       margin-top:10% ;  
+    }
+
+   #addBouton{
+       width: 33%;
+    }
+
+    #addBouton a{
+        font-size: 16px;
+    }
+    
+    .cardWorker{
+        width: 43%;
+        height: 560px;
+    }
+}
+ 
+
+/*-------------------@media(max-width: 414px)I phone 6,7,8 Plus-------------*/
+ 
+@media(max-width: 414px){
+
+ /*----------page Index:*/
+    #imgContainer{
+        width: 364px;
+        height: 249px;
+    }
+
+    #boutonConnect{
+        margin-top: -18%;
+    }
+
+    #boutonRegistrer{
+        margin-top: 3%;  
+    }
+
+    .btn{
+        width: 35%;
+        margin-left: 32%;
+    }
+
+    .btn a{
+        font-size:16px;
+    }
+
+
+   /*----------page Main:*/
+    .pageName{
+      font-size: 30px;
+    }
+
+    #addBouton{
+        width: 65%;
+    }
+
+    .cardWorker{
+        width: 80%;
+    }
+
+    .cardWorker{
+        height: 470px;
+    }
+
+    .p-card{
+        min-height: 30px;
+        font-size: 16px;
+    }
+
+    .p-cardWorkStation{
+        font-size:16px;
+        min-height: 40px;
+    }
+}
+
+
+/*-------------------@media(max-width: 320px)I phone 5-------------*/
+@media(max-width: 320px){
+
+    /*-----réglages généraux : */
+    main{
+        margin-top: 20px;
+    }
+    
+
+    /*----------page Index:*/
+
+    #sectionIndexContent{
+        margin-top: 0px;
+    } 
+
+    #imgContainer{
+        width: 270px;
+        height: 155px;
+    } 
+
+    #boutonConnect{
+        margin-top: 3%;
+    }
+ 
+    #boutonRegistrer{
+        margin-top: 3%;  
+    }
+
+    .btn{
+        width: 45%;
+        margin-left: 28%;
+    }
+ 
+
+    /*----------page Main:*/
+    .pageName{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    #addBouton{
+        width: 69%;
+        margin-bottom: 7%;
+    }
+
+    #addBouton a{
+        font-size:14px ;
+    }
+}

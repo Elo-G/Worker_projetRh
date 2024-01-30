@@ -1,0 +1,105 @@
+
+body{
+    width: 100%;
+    height:100%;
+    margin:0;
+    background-color: #0072CE; 
+}
+
+#banner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.068);
+}
+
+#appTitle_container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center
+}
+
+#appName{
+    margin-bottom: 5px;
+    margin-top: 40px;
+    color:white;
+    font-size:60px ;
+    text-shadow: 3px 3px 3px black;
+}
+
+#appTitle_container p{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/*----------------css header_withNav.twig------------------*/
+#nav_container{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    margin-left: 85%;
+    height: 70px;
+    justify-content: center;
+}
+
+#nav_container:hover{
+    transform: scale(120%);
+}
+
+
+#nav_container img{
+    margin-top: 0;
+}
+
+
+/*-------------------RESPONSIVE : @media(max-width: 414px)I phone 6,7,8 Plus-------------*/
+ 
+@media(max-width: 414px){
+
+    #appName{
+        margin-top: 20px;
+        font-size:40px ;
+   }
+
+    #appTitle_container p{
+       font-size: 20px;
+       margin-bottom: 12px;
+    }
+
+
+    /*----------------responsive header_withNav.twig------------------*/
+    #nav_container{
+       height: 54px;
+    }
+
+    #nav_container:hover{
+        transform: scale(110%);
+    }
+
+    #nav_container img{
+        width: 30px;
+    }
+}
+
+
+/*-------------------@media(max-width: 320px)I phone 5-------------*/
+@media(max-width: 320px){
+
+    #appName{
+        margin-top: 20px;
+        font-size:35px ;
+    }
+
+    #appTitle_container p{
+       font-size: 17px;
+    }
+
+    
+    /*----------------responsive header_withNav.twig------------------*/
+    #nav_container{
+     height: 50px;
+   }
+}

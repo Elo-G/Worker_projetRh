@@ -1,0 +1,128 @@
+/*--------------------------- @media(max-width: 1600px)applique ces regles pour un ecran =< 1600px---------------------------- */
+
+@media(max-width: 1600px){
+
+    form{  
+        width: 60%;
+    }
+}
+/*--------------------------- @media(max-width: 1430px)---------------------------- */
+
+@media(max-width: 1430px){
+
+    form{  
+        width: 70%;
+    }
+
+    .forInput{
+        font-size: 22px;
+      }
+
+    .btnForm{
+        font-size: 22px;
+    }
+}
+
+/*------------------@media(max-width: 1024px)I pad mini (à l'horizontal)--------------*/
+
+@media(max-width: 1024px){ 
+
+    form{  
+        width: 80%;
+    }
+
+    .forInput{
+        width: 60%;
+    }
+
+    .btnForm{
+        font-size: 22px;
+    }
+
+    .msg-error{
+        font-size: 20px;
+    }
+}
+
+
+/*-----------@media(max-width: 834px)I pad pro et galaxy tab S7  (à la verticale)----------------------*/
+
+@media(max-width: 834px){
+    
+    main{
+        margin-top:10% ;  
+    }
+
+    form{  
+        width: 100%;
+    }
+}
+
+
+/*-----------@media(max-width: 641px)-----------------------------*/
+
+@media(max-width: 641px){
+
+    #upload{
+        font-size: 18px;
+    }
+}
+
+
+/*-------------------@media(max-width: 414px)I phone 6,7,8 Plus-------------*/
+ 
+@media(max-width: 414px){
+    
+    .pageName{
+        font-size: 30px;
+    }
+
+    #upload{
+        font-size: 16px;
+    }
+
+    .forInput{
+        width: 70%;
+        font-size: 20px;
+    }
+
+    .msg-error{
+        font-size: 18px;
+    }
+
+    .btnForm{
+        font-size: 20px;
+    }
+}
+
+
+/*-------------------@media(max-width: 320px)I phone 5-------------*/
+
+@media(max-width: 320px){
+
+    main{
+        margin-top: 20px;
+    }
+
+    .pageName{
+        font-size: 25px;
+    }
+
+    #upload{
+        font-size: 14px;
+    }
+    
+    .forInput{
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .msg-error{
+        font-size: 16px;
+    }
+
+    .btnForm{
+        margin-bottom: 4%;
+        font-size: 18px;
+    }
+}

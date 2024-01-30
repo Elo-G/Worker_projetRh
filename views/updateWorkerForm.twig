@@ -1,0 +1,37 @@
+{% extends "base.twig" %}
+
+{% block style %} 
+  <link rel="stylesheet" href="/style/form.css">
+  <link rel="stylesheet" href="/style/responsive_form.css">
+{% endblock %}
+
+{% block header %}
+ <header>
+     {% include "./header/header.twig" %}
+ </header>
+{% endblock %}
+
+{% block main %}
+ <main>
+     <h2 class ="pageName"> modification des données </h2>
+      {# {{ dump(workerToUpdate.id) }} <!-- Affiche la valeur de workerToUpdate._id --> #}
+     <form id='formUpdateEmploye' action="/updateWorker/{{workerToUpdate.id}}"  method="post"  enctype="multipart/form-data"> 
+         <label for="img">Photo d'identité</label>
+         <input class='forInput'id='upload' type="file" name="img">
+         <p class="msg-error">{{errorFile}}{{messageFile}}</p>
+
+         <input class='forInput' type="text"  name="name" value="{{workerToUpdate.name}}" placeholder="Nom">
+         <p class="msg-error">{{validateErrors.name.message}}</p>
+
+         <input class='forInput' type="text" name="firstName" value="{{workerToUpdate.firstName}}" placeholder="Prénom">
+         <p class="msg-error">{{validateErrors.firstName.message}}</p>
+        
+         <input class='forInput' type="text" name="workStation" value="{{workerToUpdate.workStation}}" placeholder="Poste occupé">
+         <p class="msg-error">{{validateErrors.workStation.message}}</p>
+
+         <input class='forInput' type="number" name="blameNumber" value="{{workerToUpdate.blameNumber}}" placeholder="Nombre de blame">
+
+         <button class="btnForm" type="submit">Valider</button> 
+     </form>
+ </main>
+{% endblock %}

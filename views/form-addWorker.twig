@@ -1,0 +1,36 @@
+{% extends "base.twig" %}
+
+{% block style %} <link rel="stylesheet" href="/style/form.css">{% endblock %}
+
+{% block style %} 
+  <link rel="stylesheet" href="/style/form.css">
+  <link rel="stylesheet" href="/style/responsive_form.css">
+{% endblock %}
+
+{% block header %}
+ <header>
+     {% include "./header/header.twig" %}
+ </header>
+{% endblock %}
+
+{% block main %}
+ <main>
+  <div><h2 class='pageName'>Ajout d'un nouvel employé</h2></div>
+     <form id ="formAddEmployes" action="/addWorker" method="post"  enctype="multipart/form-data"><!--ATTENTION:ne pas oublier le enctype, sinon je ne pourrais pas uploader mes fichiers, donc ici mon image!-->
+       <label for="img">Photo d'identité</label>
+       <input class='forInput'id='upload' type="file" name="img">
+       <p class="msg-error">{{errorFile}}{{messageFile}}</p>
+
+       <input class='forInput' type="text" name="name" placeholder ="Nom">
+       <p class="msg-error">{{validateErrors.name.message}}</p>
+
+       <input class='forInput' type="text" name="firstName" placeholder="Prénom">
+       <p class="msg-error">{{validateErrors.firstName.message}}</p>
+
+       <input class='forInput' type="text" name="workStation" placeholder="Poste occupé">
+       <p class="msg-error">{{validateErrors.workStation.message}}</p>
+
+       <button class="btnForm" type="submit">Valider</button>
+     </form>  
+ </main>
+{% endblock %}

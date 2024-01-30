@@ -1,0 +1,44 @@
+
+{% extends "base.twig" %}
+
+{% block style %} 
+  <link rel="stylesheet" href="/style/form.css">
+  <link rel="stylesheet" href="/style/responsive_form.css">
+{% endblock %}
+
+
+{% block header %}
+ <header>
+     {% include "./header/header.twig" %}
+ </header>
+{% endblock %}
+
+{% block main %}
+ {#FORMULAIRE D'ENREGISTREMENT DES ENTREPRISES #}
+ <main>
+   <h2 class='pageName'>S'enregistrer</h2>
+     
+   <form id='registerForm' action="/registerCompagny" method = "post">
+     <input class='forInput' type="text" id="name" name ="name" placeholder = "Nom : ">
+     <p class="msg-error">{{validateErrors.name.message}}</p>
+
+     <input class='forInput' type="text" id="siretNumber" name = "siretNumber" placeholder ="Numéro Siret : ">
+     <p class="msg-error">{{validateErrors.siretNumber.message}}</p>
+
+     <input class='forInput' type="email" id ="mail" name = "mail" placeholder= "email : ">
+     <p class="msg-error">{{validateErrors.mail.message}}{{mailError}}</p>
+
+     <input class='forInput' type="text" id ="pdgName" name = "pdgName" placeholder= "Nom du directeur : ">
+     <p class="msg-error">{{validateErrors.pdgName.message}}</p>
+
+     <input class='forInput' type="password" id = "password" name = "password" placeholder = "Mot de passe : ">
+     <p class="msg-error">{{passwordError}}</p>
+
+     <input class='forInput' type="password" id = "confirmPassword" name = "confirmPassword" placeholder = "Confirmation du mot de passe : ">
+     <p class="msg-error">{{confirmPasswordError}}</p>
+
+     <button type="submit" class="btnForm">valider</button>
+   </form>
+ </main>
+{% endblock %}
+

@@ -1,0 +1,207 @@
+
+body{
+    width: 100%;
+    height:100%;
+    margin:0;
+    background-color: #0072CE; 
+    font-size: 25px;
+}
+
+main{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width:100%;
+   height:100%;
+   margin-top: 3%;
+} 
+
+
+.pageName{
+    text-align: center;
+    text-shadow: 1px 1px 3px grey;
+    color: white;
+    font-size: 35px;
+    margin-bottom: 35px;
+ }
+
+
+
+/* ------------------------------------------------------------------------------PAGE INDEX-------------------------------------------------------------------------------- */
+
+#sectionIndexContent{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+} 
+ 
+#imgContainer{
+    display: flex;
+    flex-direction: column; 
+    width: 614px;
+    height: 599px;
+}
+
+#boutonConnect{
+    margin-top: -15%;
+}
+
+#boutonRegistrer{
+    margin-top: 3%;  
+}
+
+.btn{
+    width: 30%;
+    background-color:#E3E9FF;
+    color: grey;
+    box-shadow: 1px 1px 0px; 
+    margin-left: 35%;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: #0072CE;
+}
+
+.btn a{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
+
+.btn a:hover{
+    color:white ;
+}
+
+
+/*------------------------------------------------------------------------------- PAGE MAIN ------------------------------------------------------------------------- */
+
+
+#pageContent{
+    width: 90%;
+    margin-bottom: 60px;
+}
+
+#btn_container{
+    display: flex;
+    justify-content: center;
+}
+#addBouton{
+    width: 15%;
+    margin-bottom: 3%;
+    background-color:#FFAA4D;
+    box-shadow: 2px 2px 5px black;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    padding:5px;
+}
+
+#addBouton:hover{
+    background-color:#fc8607;
+}
+
+ #addBouton a{
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.cardWorker{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23%;
+    height:505px ;
+    background-color:white;
+    padding: 5px ;
+    margin: 5px 5px 5px 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black; 
+}
+
+#profilPicture_container{
+    margin-top: 3%;
+    margin-bottom: 5%;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    border: solid 1px #0071ce52;
+}
+
+#idImg{
+    width: 130px;
+    height: 130px;
+    object-fit:cover;
+    border-radius: 100%;
+}
+
+.p-card{
+    width: 90%;
+    min-height:30px ;
+    margin-top: 0;
+    margin-bottom: 3%;
+    padding:5px 10px 5px 10px;
+    background-color:#0071ce52;
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+.p-cardWorkStation{
+     width: 90%;
+     min-height: 60px;
+     margin-top: 0;
+     margin-bottom: 3%;
+     padding:5px 10px 5px 10px;
+     background-color:#0071ce52;
+     border-radius: 5px;
+     font-size: 22px;
+}
+
+#command{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:4% ; 
+}
+
+.fonctionnalite{
+    font-size: 17px;
+    text-decoration: none;
+    color:#0166ba;
+    text-align: center;
+    margin-bottom: 10px; 
+}
+
+.fonctionnalite:hover{
+    color:#fc8607;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+

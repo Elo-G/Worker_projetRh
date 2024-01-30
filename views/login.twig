@@ -1,0 +1,27 @@
+{% extends "base.twig" %}
+
+{% block style %} 
+ <link rel="stylesheet" href="/style/form.css">
+ <link rel="stylesheet" href="/style/responsive_form.css">
+{% endblock %}
+
+{% block header %}
+ <header>
+     {% include "./header/header.twig" %}
+ </header>
+{% endblock %}
+
+{% block main %}
+ <main>
+     <h2 class='pageName'>Login</h2>
+     <form action="/login" method="post">
+         <input class='forInput' type="email" id='mailLogin' name ="mail" placeholder = "email : ">
+         <p class="msg-error">{{errorConnect}}</p> 
+
+         <input class='forInput' type="password" id='pswdLogin' name = "password" placeholder='Mot de passe : '>
+         <p class="msg-error">{{errorPassword}} </p> 
+
+         <button type='submit' class= "btnForm">Se connecter</button>
+     </form>
+ </main>
+{% endblock %}

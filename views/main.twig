@@ -1,0 +1,45 @@
+é{% extends "base.twig" %}
+
+{% block style %}
+ <link rel="stylesheet" href="/style/style.css">
+ <link rel="stylesheet" href="/style/responsive.css">
+{% endblock %}
+
+{% block header %}
+ </header>
+   {% include "./header/header_withNav.twig" %}
+ </header>
+{% endblock %}
+
+{% block main %}
+<main>
+ <h2 class='pageName'>Liste des employés</h2>
+
+ <div id="pageContent"> 
+    <div id="btn_container">
+      <button id="addBouton"><a ="addWrk" href="/addWorker"> AJOUTER UN EMPLOYE</a></button>
+    </div>
+
+    <div class="cardContainer">
+     {% for worker in workers %}
+       <div class="cardWorker">
+         <div id="profilPicture_container">
+            <img id ='idImg'src="./uploads/{{worker.img}}" alt="photo de l'employé" id="imgWorker">
+         </div>
+
+         <p class="p-card "><b>Nom : </b><span class="span-card"> {{worker.name}}</span></p>
+         <p class="p-card "><b>Prénom : </b><span class="span-card"> {{worker.firstName}}</span></p>
+         <p class="p-cardWorkStation"><b>Poste : </b><span class="span-card"> {{worker.workStation}}</span></p>
+         <p class="p-card "><b>Blame : </b><span class="span-card"> {{worker.blameNumber}}</span></p>  
+
+         <div id='command'>
+            <a class="fonctionnalite" href="/updateWorker/{{worker.id}}"><b>MODIFIER</b></a> 
+            <a class="fonctionnalite" href="/addBlame/{{worker.id}}"><b>ENVOYER UN BLAME</b></a>
+            <a class="fonctionnalite" href="/deleteWorker/{{worker.id}}"><b>SUPPRIMER</b></a>
+         </div>
+       </div>
+     {% endfor %}
+   </div>
+ </div>
+</main>
+{% endblock %}

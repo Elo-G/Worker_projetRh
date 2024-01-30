@@ -1,0 +1,25 @@
+{% extends "base.twig" %}
+
+{% block style %}
+ <link rel="stylesheet" href="/style/style.css">
+ <link rel="stylesheet" href="/style//responsive.css"
+{% endblock %}
+
+{% block header %}
+ </header>
+   {% include "./header/header.twig" %}
+ </header>
+{% endblock %}
+
+{% block main %}
+ <main>
+   <section id="sectionIndexContent">
+     <div id="imgContainer">
+       <img id='workersImg'src="./images/workersImg.jpg" alt="dessin d'une workteam" > 
+       <button id="boutonConnect" class= "btn"><a href="/login">Se connecter</a></button>
+       <button id="boutonRegistrer" class= "btn"><a  href="/registerCompagny">S'enregistrer</a></button>
+     </div>
+   </section>
+ </main>
+{% endblock %}
+
